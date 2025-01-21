@@ -55,4 +55,20 @@ class Calculator{
             second = nextTerm;
 		}
 	}	
+
+	// Method to calculate sum and average of an array
+    void sumAverageArr() {
+        UserInput input = new UserInput();
+        arr = input.arrayInput(); // Get array input
+
+        int total = 0;
+        for (int value : arr) { // Enhanced for loop for readability
+            total += value;
+        }
+
+        double average = (double) total / arr.length; // Calculate average
+        System.out.println("The Sum of Array Elements is: " + total);
+        System.out.println("The Average of Array Elements is: " + average);
+    }
+
 }
