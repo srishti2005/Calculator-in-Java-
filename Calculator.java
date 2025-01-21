@@ -23,9 +23,9 @@ class Calculator {
     }
 
     // Method to perform division
-    int division() {
+    double division() {
         try {
-            return numbers[0] / numbers[1];
+            return (double) numbers[0] / numbers[1];  // Division changed to return double
         } catch (ArithmeticException e) {
             System.out.println("Error: Division by zero is not allowed.");
             return 0; // Return 0 to indicate error
