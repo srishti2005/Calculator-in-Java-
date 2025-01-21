@@ -37,18 +37,16 @@ class Calculator{
 	}
 
 	void fibonnaci(){ //new method for fibonnaci code			
-		UserInput input = new UserInput(); 
-//calls UserInput method
+		UserInput input = new UserInput(); //calls UserInput method
 		int terms; //to store no of terms
 		
-		terms = input.fiboInput();
- //calling fiboInput() method from UserInput class
+		terms = input.fiboInput(); //calling fiboInput() method from UserInput class
 		
 		// terms to store 1st and 2nd terms
         int first = 0; 
 		int second = 1;
 			        
-        for (int i = 1; i <= terms; i++) { //for loop runs no.of.terms times
+        for (int i = 1; i <= terms; i++) {  //for loop runs no.of.terms times
             System.out.print(first + " ");
             
             // Update the values for the next Fibonacci term
